@@ -5,7 +5,7 @@ import io
 from datetime import datetime
 
 # 페이지 설정
-st.set_page_config(page_title="식대 대장 자동 추출기", layout="centered")
+st.set_page_config(page_title="임금 대장 식대 자동 추출기", layout="centered")
 
 # 이름 추출 함수 (기존 로직 동일)
 def extract_name(text):
@@ -15,7 +15,7 @@ def extract_name(text):
     return match.group(1).strip() if match else None
 
 # 헤더 부분
-st.title("🍱 식대 대장 자동 추출기 v1.0")
+st.title("🍱 임금 대장 식대 자동 추출기 v1.0")
 st.info("엑셀 파일들을 업로드하면 성명(B열)과 식대금액(D열)을 자동으로 정리합니다.")
 
 # 1. 저장 방식 선택
